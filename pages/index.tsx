@@ -16,8 +16,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='flex justify-center'>
-        <div className='text-red-500 font-bold text-2xl mt-10 font-sans flex flex-col justify-center ml-4 mr-4'>
-          <h1 className='mb-4'>Beste Suze,</h1>
+        <div className=' font-bold text-2xl mt-10 font-sans flex flex-col justify-center ml-4 mr-4'>
+          <h1 className='mb-4 mt-20'>Beste Suze,</h1>
           
           <p>Wat goed dat je deze pagina hebt gevonden.</p>
           <p>Dit jaar heeft Sint een iets ander soort gedicht voor je.</p>
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
           </div>
           <div className='mt-2'>
             {code == "netflix" && <p className='text-green-500'>Sloop de TV binnen 1 minuut.</p>}
-            {code != "netflix" && code.length != 0 && <p>Fout wachtwoord</p>}
+            {code != "netflix" && code.length != 0 && <p className='text-red-500'>Fout wachtwoord</p>}
             {code.length == 0 && <p className='text-blue-500'>Vul een wachtwoord in</p>}
             
           </div>
