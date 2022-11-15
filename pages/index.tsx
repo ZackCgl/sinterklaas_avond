@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='flex justify-center'>
-        <div className=' font-bold text-2xl mt-10 font-sans flex flex-col justify-center ml-4 mr-4'>
+        <div className=' text-white font-bold text-2xl mt-10 font-sans flex flex-col justify-center ml-4 mr-4'>
           <h1 className='mb-4 mt-20'>Beste Suze,</h1>
           
           <p>Wat goed dat je deze pagina hebt gevonden.</p>
