@@ -25,9 +25,9 @@ const Home: NextPage = () => {
           <p>Om toegang te krijgen tot je kadootjes, moet je een wachtwoord raden.</p>
 
           <div className='mt-10 flex- flex-col'>
-          <input value={code} onChange={(e) => setCode(e.target.value)} type="password" className='w-40'/>
+          <input value={code} onChange={(e) => setCode(e.target.value)} type="password" className='text-black w-40'/>
           </div>
-          <div className='mt-2'>
+          <div className='mt-2 font-mono'>
             {code == "netflix" && <p className='text-green-500'>Sloop de TV binnen 1 minuut.</p>}
             {code != "netflix" && code.length != 0 && <p className='text-red-500'>Fout wachtwoord</p>}
             {code.length == 0 && <p className='text-blue-500'>Vul een wachtwoord in</p>}
