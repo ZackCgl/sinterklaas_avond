@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 
   
   return (
-    <div className={`${code == "kapoentje" ? "bg-[url('https://thumbs.gfycat.com/WealthyOldfashionedDromaeosaur-size_restricted.gif')]" : "bg-gray-900"} bg-center min-h-screen h-full`}>
+    <div className={`${code == "kapoentje" ? "bg-[url('https://thumbs.gfycat.com/WealthyOldfashionedDromaeosaur-size_restricted.gif')]" : 'bg-[url("https://media.tenor.com/M1z8DYZXVjkAAAAd/wallpaper.gif")] bg-cover'} bg-center min-h-screen h-full`}>
       <Head>
         <title>Sinterklaas</title>
         <meta name="description" content="Sinterklaas" />
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           <p>Dit jaar heeft Sint een iets ander soort gedicht voor je.</p>
           <p>De Sint heeft besloten dat je niet zo lief bent geweest.</p>
           <p>Om toegang te krijgen tot je kadootjes, moet je een wachtwoord raden.</p>
-          
+
           </div>}
           <div className='mt-10 flex- flex-col'>
           <input value={code} onChange={(e) => setCode(e.target.value)} type="password" className='text-black w-40'/>
