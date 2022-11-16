@@ -24,7 +24,7 @@ const Home: NextPage = () => {
             <p>Om toegang te krijgen tot je kadootjes, moet je een wachtwoord raden.</p>
           </div>}
           <div className='mt-10 flex- flex-col'>
-            <input value={code} name="bob" onChange={(e) => setCode(e.target.value)} type="password" className='text-black w-40'/>
+            <input value={code} name="inputCode" onChange={(e) => setCode(e.target.value)} type="password" className='text-black w-40'/>
           </div>
           <div className='mt-2 font-serif'>
             {code == "kapoentje" && <p className='mt-10 text-4xl font-serif text-white'>Open de pakjes!</p>}
