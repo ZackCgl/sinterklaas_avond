@@ -25,8 +25,8 @@ const Home: NextPage = () => {
           {inputCode != RIGHT_CODE && 
           <div>
             <h1 className='mb-4 mt-20'>Beste Suze,</h1>
-            <p>De Sint heeft besloten dat je niet zo lief bent geweest.</p>
-            <p>Om toegang te krijgen tot je kadootjes, moet je een wachtwoord raden.</p>
+            <p>Om toegang te krijgen tot je kadootjes, moet een wachtwoord zoeken.</p>
+            <p>Sinterklaas heeft het wachtwoord in de doos verstopt.</p>
           </div>}
 
           {/*input password/code */}
@@ -38,15 +38,16 @@ const Home: NextPage = () => {
           {/*output */}
           <div className='mt-2 font-serif'>
             {/*no input */}
-            {inputCode.length == 0 && <p className='text-blue-500'>Vul een wachtwoord in</p>}
+            {inputCode.length == 0 && <p className='text-blue-500'>Vul het wachtwoord in</p>}
 
             {/*wrong input */}
             {inputCode != RIGHT_CODE && inputCode.length != 0 && <div><p className='text-red-500 mt-10'>Fout, geen kado!</p>
             <img className='h-52 w-82' src="https://i.imgur.com/MHTsAUO.png" alt="" /></div>}
 
             {/*right input */}
-            {inputCode == RIGHT_CODE && <p className='mt-10 text-4xl font-serif text-white'>Open de pakjes!</p>}
-           
+            {inputCode == RIGHT_CODE && <p className='mt-10 text-4xl font-serif text-white'>Goed gedaan!</p>}
+            {inputCode == RIGHT_CODE && <p className='mt-10 text-4xl font-serif text-white'>De pakjes liggen bij de jassen!</p>}
+
           </div>
         </div>
       </main>
