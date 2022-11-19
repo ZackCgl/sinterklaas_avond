@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "cypress": "cypress open"
+    "lint": "next lint"
   },
   "dependencies": {
     "@fontsource/roboto": "^4.5.8",
@@ -22,7 +21,6 @@
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "autoprefixer": "^10.4.13",
-    "cypress": "^11.1.0",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
     "postcss": "^8.4.19",
