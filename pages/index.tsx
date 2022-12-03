@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 
             {/*right input */}
             
-            {inputCode == RIGHT_CODE && <p className='mt-10 text-4xl font-serif text-white'>De pakjes liggen bij de jassen!</p>}
+            {inputCode == RIGHT_CODE && <p className='mt-10 text-4xl font-serif text-white'>De pakjes liggen in de schuur!</p>}
 
           </div>
         </div>
