@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 
             {/*wrong input */}
             {inputCode != RIGHT_CODE && inputCode.length != 0 && <div><p className='text-white mt-10'>Fout, geen kado!</p>
-            <img className='h-52 w-82' src="https://i.imgur.com/MHTsAUO.png" alt="" /></div>}
+            </div>}
 
             {/*right input */}
             
