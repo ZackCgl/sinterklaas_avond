@@ -25,8 +25,8 @@ const Home: NextPage = () => {
           {inputCode != RIGHT_CODE && 
           <div>
             <h1 className='mb-4 mt-20'>Beste Suze,</h1>
-            <p>Om toegang te krijgen tot je kadootjes, moet een wachtwoord zoeken.</p>
-            <p>Sinterklaas heeft het wachtwoord in de doos verstopt.</p>
+            <p>Om toegang te krijgen tot je pakjes, moet een wachtwoord zoeken.</p>
+            <p>Sinterklaas heeft het wachtwoord in de Netflix TV verstopt.</p>
           </div>}
 
           {/*input password/code */}
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 
             {/*right input */}
             
-            {inputCode == RIGHT_CODE && <p className='mt-10 text-4xl font-serif text-white'>De pakjes liggen in de schuur!</p>}
+            {inputCode == RIGHT_CODE && <p className='mt-10 text-4xl font-serif text-white'>De pakjes liggen in de schuur.</p>}
 
           </div>
         </div>
