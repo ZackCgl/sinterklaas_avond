@@ -1,11 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const Home: NextPage = () => {
   const RIGHT_CODE = "kapoentje"
   const [inputCode, setInputCode] = useState<string>("")
+  const inputRef:any = useRef();
 
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
   return (
     //check if the code is passed and change background
     <div className={`${inputCode == RIGHT_CODE ? 
@@ -31,7 +35,7 @@ const Home: NextPage = () => {
 
           {/*input password/code */}
           <form className='mt-10 flex- flex-col'>
-            <input value={inputCode} name="inputCode" onChange={(e) => setInputCode(e.target.value.toLowerCase())} 
+            <input placeholder='wachtwoord' ref={inputRef} value={inputCode} name="inputCode" onChange={(e) => setInputCode(e.target.value.toLowerCase())} 
             type="password" className='text-black w-40'/>
           </form>
 
