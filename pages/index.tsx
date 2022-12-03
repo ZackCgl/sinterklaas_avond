@@ -31,7 +31,7 @@ const Home: NextPage = () => {
 
           {/*input password/code */}
           <form className='mt-10 flex- flex-col'>
-            <input value={inputCode} name="inputCode" onChange={(e) => setInputCode(e.target.value)} 
+            <input value={inputCode} name="inputCode" onChange={(e) => setInputCode(e.target.value.toLowerCase())} 
             type="password" className='text-black w-40'/>
           </form>
 
